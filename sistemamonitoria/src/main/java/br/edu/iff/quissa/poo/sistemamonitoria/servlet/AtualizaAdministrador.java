@@ -49,7 +49,7 @@ public class AtualizaAdministrador extends HttpServlet {
             
 //     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
 //      TODOS OS PARAMETROS DA SUA ENTIDADE!
-    administradordao.updateAdministrador(administradordao.getAdm_siape(), adm_siape, senha, nome );
+    administradordao.updateAdministrador(nome, adm_siape, senha);
 
 
             // aí, depois de atualizar, vc recarrega a list na sessão http:

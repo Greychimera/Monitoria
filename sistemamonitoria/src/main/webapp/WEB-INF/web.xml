@@ -45,7 +45,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>sistemamonitoria.jps</welcome-file>
+        <welcome-file>Login.jsp</welcome-file>
     </welcome-file-list>
     
 </web-app>

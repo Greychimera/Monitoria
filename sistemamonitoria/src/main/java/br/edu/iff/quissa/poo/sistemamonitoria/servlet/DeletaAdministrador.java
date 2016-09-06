@@ -58,8 +58,8 @@ public class DeletaAdministrador extends HttpServlet {
             O método no EmpregadoDAO parece funcionar blzinha...
    */
       AdministradorDAO administradordao = new AdministradorDAO();
-      administradordao.setAdm_siape(Integer.parseInt(adm_siape));
-      administradordao.deleteAdministrador(adm_siape);
+      //administradordao.setAdm_siape(adm_siape);
+      administradordao.deleteAdministrador(Integer.parseInt(adm_siape));
        
         List<Administrador> administradores = administradordao.listAdministrador();
   request.getSession(true).setAttribute("administradores", administradores);

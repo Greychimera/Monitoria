@@ -34,11 +34,11 @@ public class CarregaAdministrador extends HttpServlet {
         Administrador administrador = new Administrador();
         
         String adm_siape = request.getParameter("adm_siape");
-        administrador.setAdm_siape(Integer.parseInt(request.getParameter(adm_siape));
+        administrador.setAdm_siape(Integer.parseInt(request.getParameter(adm_siape)));
       
         System.out.println("loko vei... " + adm_siape);
         AdministradorDAO administradorDao = new AdministradorDAO();
-        Administrador admin = administradorDao.recuperaAdministrador(adm_siape);
+        Administrador admin = administradorDao.recuperaAdministrador(Integer.parseInt(adm_siape));
        
         System.out.println("what?");
         System.out.println("Só p testar: " + administrador.getAdm_siape());
