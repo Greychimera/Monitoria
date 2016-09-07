@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Monitoria</a> 
+                <a class="navbar-brand" href="PaginaPrincipal.jsp">Monitoria</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -45,29 +45,29 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 				
 					
                     <li>
-                        <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> Página inicial</a>
+                        <a class="active-menu"  href="index.jsp"><i class="fa fa-dashboard fa-3x"></i> Página inicial</a>
                     </li>
                     <li>
-                        <a  href="Cadastros.html"><i class="fa fa-desktop fa-3x"></i> Cadastros</a>
+                        <a  href="Cadastros.jsp"><i class="fa fa-desktop fa-3x"></i> Cadastros</a>
                     </li>
                     <li>
-                        <a  href="Relatorios.html"><i class="fa fa-qrcode fa-3x"></i> Relatórios</a>
+                        <a  href="Relatorios.jsp"><i class="fa fa-qrcode fa-3x"></i> Relatórios</a>
                     </li>
                     <li>
-                        <a   href="Alterar.html"><img style="height: 45px; width:45px; margin-right:10px;" src="img/settings.png"/> Alterar</a>
+                        <a   href="Alterar.jsp"><img style="height: 45px; width:45px; margin-right:10px;" src="img/settings.png"/> Alterar</a>
                     </li>	
                       <li  >
-                        <a  href="Tabelas.html"><i class="fa fa-table fa-3x" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
+                        <a  href="Tabelas.jsp"><i class="fa fa-table fa-3x" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
                     </li>
                     <li  >
-                        <a  href="Novatabela.html"><i class="fa fa-edit fa-3x"></i> Nova tabela </a>
+                        <a  href="Novatabela.jsp"><i class="fa fa-edit fa-3x"></i> Nova tabela </a>
                     </li>				
 					
 					                   
                     <li>
                        
                   <li>
-                        <a  href="Perfil.html"><i class="fa fa-square-o fa-3x"></i> Perfil</a>
+                        <a  href="Perfil.jsp"><i class="fa fa-square-o fa-3x"></i> Perfil</a>
                     </li>	
                 </ul>
                

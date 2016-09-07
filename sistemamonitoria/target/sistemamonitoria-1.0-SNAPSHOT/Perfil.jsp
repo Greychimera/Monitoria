@@ -14,7 +14,7 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-    <div id="wrapper">
+     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Administrador</a> 
+                <a class="navbar-brand" href="PaginaPrincipal.jsp">Monitoria</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -35,38 +35,38 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
-                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+                    <img src="img/find_user.png" class="user-image img-responsive"/>
 					</li>
 				
 					
                     <li>
                         <a class="active-menu"  href="index.jsp"><i class="fa fa-dashboard fa-3x"></i> Página inicial</a>
                     </li>
-                     <li>
+                    <li>
                         <a  href="Cadastros.jsp"><i class="fa fa-desktop fa-3x"></i> Cadastros</a>
                     </li>
                     <li>
                         <a  href="Relatorios.jsp"><i class="fa fa-qrcode fa-3x"></i> Relatórios</a>
                     </li>
-						   <li  >
-                        <a   href="Alterar.jsp"><i  class="fa fa-bar-chart-o fa-3x"></i> Alterar</a>
+                    <li>
+                        <a   href="Alterar.jsp"><img style="height: 45px; width:45px; margin-right:10px;" src="img/settings.png"/> Alterar</a>
                     </li>	
                       <li  >
-                        <a  href="Tabelas.jsp"><img src="/home/aluno/NetBeansProjects/bs-binary-admin/assets/img/settings.png" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
+                        <a  href="Tabelas.jsp"><i class="fa fa-table fa-3x" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
                     </li>
                     <li  >
                         <a  href="Novatabela.jsp"><i class="fa fa-edit fa-3x"></i> Nova tabela </a>
                     </li>				
-					       
-                    
-                  <li  >
-                        <a  href="Perfil.jsp"><i class="fa fa-square-o fa-3x"></i> Blank Page</a>
+					
+					                   
+                    <li>
+                       
+                  <li>
+                        <a  href="Perfil.jsp"><i class="fa fa-square-o fa-3x"></i> Perfil</a>
                     </li>	
                 </ul>
                
-            </div>
-            
-        </nav>  
+            </div>  
       
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >

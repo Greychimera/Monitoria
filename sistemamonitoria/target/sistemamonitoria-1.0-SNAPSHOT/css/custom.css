@@ -377,3 +377,21 @@ line-height: 1.428571429;
 }
 
 
+#cadastros a{
+    
+    height: 10%;
+    width: 10%;
+    background-color: #C90000;
+    padding: 2% 5% 2% 5%;
+    color: white;
+    text-decoration: none;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#cadastros a:hover{
+    
+    color: white;
+    background-color: #B40101;
+    
+}
