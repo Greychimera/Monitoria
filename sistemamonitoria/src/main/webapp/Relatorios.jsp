@@ -3,15 +3,17 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
-	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <title>Relatórios</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <!-- FONTAWESOME STYLES-->
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <!-- MORRIS CHART STYLES-->
+        <link href="js/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css"/>
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <!-- GOOGLE FONTS-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    
 </head>
 <body>
      <div id="wrapper">
@@ -23,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="PaginaPrincipal.jsp">Monitoria</a> 
+                <a class="navbar-brand" href="index.jsp">Monitoria</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -48,10 +50,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <li>
                         <a  href="Relatorios.jsp"><i class="fa fa-qrcode fa-3x"></i> Relatórios</a>
                     </li>
-                    <li>
-                        <a   href="Alterar.jsp"><img style="height: 45px; width:45px; margin-right:10px;" src="img/settings.png"/> Alterar</a>
-                    </li>	
-                      <li  >
+                    	
+                      <li>
                         <a  href="Tabelas.jsp"><i class="fa fa-table fa-3x" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
                     </li>
                     <li  >

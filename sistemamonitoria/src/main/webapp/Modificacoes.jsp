@@ -1,28 +1,25 @@
-<%@page import="br.edu.iff.quissa.poo.sistemamonitoria.Administrador"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-      <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Cadastros</title>
-    
-	<!-- BOOTSTRAP STYLES-->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLES-->
-    <link href="css/font-awesome.css" rel="stylesheet" />
-     <!-- MORRIS CHART STYLES-->
-    <link href="js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+<!DOCTYPE>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <!-- FONTAWESOME STYLES-->
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <!-- MORRIS CHART STYLES-->
+        <link href="js/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css"/>
         <!-- CUSTOM STYLES-->
-    <link href="css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <!-- GOOGLE FONTS-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     
-    <link href="css/paginadecadastros.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-     <div id="wrapper">
+        <link href="css/paginadecadastros.css" rel="stylesheet" type="text/css"/>
+        
+        <title>Modificações cadastrais</title>
+        
+    </head>
+    <body>
+        <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -82,29 +79,21 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <div class="col-md-12">
                       <h2>Cadastros</h2>   
                      
-                     <div id="cadastros">
-                         
-                         <h4>Criar novos cadastros</h4>
-                         
-                         <br>
-                             
-                         <a href="Professor.jsp">Professor</a>
-                         
-                         <a href="Cadasdisc.jsp">Disciplina</a>
-                         
-                         <br><br>
-                         
-                         <h4>Listar para atualizar ou excluir cadastros</h4>
-                         
-                         <br>
-                         
-                         <a href="Modificacoes.jsp">Listar</a>
-                         
-                     </div>
+                      <div id="listagem">
+            
+                        <h4>Selecione uma das opções abaixo para escolher qual cadastro modificar e marque a caixa pertencente ao cadastro que queira modificar.</h4>
+            
+                            <select name="opcoesDeModificacoes">
+                                <option value="Excluir">Excluir</option>
+                                <option value="Atualizar">Atualizar</option>
+                            </select>
+            
+                      </div>
                       
                     </div>
                 </div>
             </div> 
         </div>
+        
     </body>
 </html>

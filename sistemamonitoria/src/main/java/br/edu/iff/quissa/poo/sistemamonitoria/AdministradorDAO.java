@@ -147,18 +147,9 @@ public class AdministradorDAO { // acessar banco de dados
       }
    }
 
-    public Administrador recuperaAdministrador(Integer cod_empregado) {
+    public List<Administrador> getlistAdministrador() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    public List<Administrador> listaAdministradores() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void updateAdministrador(String nome, String adm_siape, String adm_senha) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
- 
 
 }
 

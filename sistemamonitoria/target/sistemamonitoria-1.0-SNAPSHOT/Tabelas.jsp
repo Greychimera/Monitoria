@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">Administrador</a> 
+                <a class="navbar-brand" href="index.jsp">Monitoria</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -41,7 +41,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
-                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+                    <img src="img/find_user.png" class="user-image img-responsive"/>
 					</li>
 				
 					
@@ -54,11 +54,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <li>
                         <a  href="Relatorios.jsp"><i class="fa fa-qrcode fa-3x"></i> Relatórios</a>
                     </li>
-						   <li  >
-                        <a   href="Alterar.jsp"><i  class="fa fa-bar-chart-o fa-3x"></i> Alterar</a>
-                    </li>	
+						   
                       <li  >
-                        <a  href="Tabelas.jsp"><img src="/home/aluno/NetBeansProjects/bs-binary-admin/assets/img/settings.png" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
+                        <a  href="Tabelas.jsp"><img src="img/settings.png" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
                     </li>
                     <li  >
                         <a  href="Novatabela.jsp"><i class="fa fa-edit fa-3x"></i> Nova tabela </a>

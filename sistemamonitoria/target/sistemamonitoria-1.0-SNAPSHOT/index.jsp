@@ -28,12 +28,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="PaginaPrincipal.jsp">Monitoria</a> 
+                <a class="navbar-brand" href="index.jsp">Monitoria</a> 
             </div>
-  <div style="color: white;
-padding: 15px 50px 5px 50px;
-float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Sair</a> </div>
+            <div style="color: white;
+            padding: 15px 50px 5px 50px;
+            float: right;
+            font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Sair</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -53,9 +53,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <li>
                         <a  href="Relatorios.jsp"><i class="fa fa-qrcode fa-3x"></i> Relatórios</a>
                     </li>
-                    <li>
-                        <a   href="Alterar.jsp"><img style="height: 45px; width:45px; margin-right:10px;" src="img/settings.png"/> Alterar</a>
-                    </li>	
+                    	
                       <li  >
                         <a  href="Tabelas.jsp"><i class="fa fa-table fa-3x" style="height: 45px; width:45px; margin-right: 10px;"></i> Tabelas salvas </a>
                     </li>
@@ -96,11 +94,13 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                             <th>User No.</th>
+                                            <th>Data</th>
+                                            <th>Nome Completo</th>
+                                            <th>Documento</th>
+                                            <th>Número</th>
+                                            <th>Computador</th>
+                                            <th>Hora entrada</th>
+                                            <th>Hora saída</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -110,6 +110,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                                             <td>Otto</td>
                                             <td>@mdo</td>
                                             <td>100090</td>
+                                            <td>100090</td>
+                                            <td>100090</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -117,12 +119,16 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                                             <td>Thornton</td>
                                             <td>@fat</td>
                                             <td>100090</td>
+                                            <td>100090</td>
+                                            <td>100090</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Larry</td>
                                             <td>the Bird</td>
                                             <td>@twitter</td>
+                                            <td>100090</td>
+                                            <td>100090</td>
                                             <td>100090</td>
                                         </tr>
                                          <tr>
@@ -131,6 +137,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                                             <td>Otto</td>
                                             <td>@mdo</td>
                                             <td>100090</td>
+                                            <td>100090</td>
+                                            <td>100090</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -138,12 +146,16 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                                             <td>Thornton</td>
                                             <td>@fat</td>
                                             <td>100090</td>
+                                            <td>100090</td>
+                                            <td>100090</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Larry</td>
                                             <td>the Bird</td>
                                             <td>@twitter</td>
+                                            <td>100090</td>
+                                            <td>100090</td>
                                             <td>100090</td>
                                         </tr>
 

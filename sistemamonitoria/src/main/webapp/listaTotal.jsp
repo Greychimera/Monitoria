@@ -1,25 +1,35 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://displaytag.sf.net" prefix="display"%>
 <%@page import="org.displaytag.*" %>
 <%@page import="java.util.*" %>
-<%@page import="br.edu.iff.quissa.poo.sistemamonitoria.servlet"%>
+<%@page import="br.edu.iff.quissa.poo.sistemamonitoria.servlet.ListaAdministrador"%>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="displaytagexemplo.css">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <!-- FONTAWESOME STYLES-->
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <!-- MORRIS CHART STYLES-->
+        <link href="js/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css"/>
+        <!-- CUSTOM STYLES-->
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <!-- GOOGLE FONTS-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
         <title>Lista</title>
     </head>
     <body>
-    <display:table name="${sessionScope.administradores}" class="dataTable">
-        <display:column property="adm_siape" />
-        <display:column property="adm_senha" />
-        <display:column property="nome" />
         
-        <display:column title="Editar" href="CarregaAdministrador" paramId="adm_siape" paramProperty="adm_siape"><img src="con.png" title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAdministrador" paramId="adm_siape" paramProperty="adm_siape"><img src="for.png" title="Apagar"/></display:column>
-    </display:table>
+        
+        <table>
+            <tr>
+                <td>USUÁRIO</td> <td>DOCUMENTO DE IDENTIFICAÇÃO</td> 
+            </tr>
+            
+            <% List listade
+            
+        </table>
 <br/>
     </body>
 </html>

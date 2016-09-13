@@ -23,11 +23,14 @@ public class ListaAdministrador extends HttpServlet {
    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
+      
         AdministradorDAO administradordao = new AdministradorDAO();
-        List<Administrador> administradores = administradordao.listaAdministradores();
-        request.getSession(true).setAttribute("administradores", administradores);
-        response.sendRedirect("listaTotal.jsp");
+  
+            List<Administrador> administradores = administradordao.getlistAdministrador();
+            request.setAttribute("administradores", administradores);
+            request.getSession(true).setAttribute("administradores", administradores);
+            response.sendRedirect("listaTotal.jsp");
+        
     }
   
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
