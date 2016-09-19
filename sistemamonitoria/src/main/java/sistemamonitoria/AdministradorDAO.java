@@ -1,6 +1,6 @@
-package br.edu.iff.quissa.poo.sistemamonitoria;
+package sistemamonitoria;
 
-import br.edu.iff.quissa.poo.sistemamonitoria.hibernate.HibernateUtil;
+import hibernate.HibernateUtil;
 import java.util.List; 
 import org.hibernate.HibernateException; 
 import org.hibernate.Session; 
@@ -148,6 +148,14 @@ public class AdministradorDAO { // acessar banco de dados
    }
 
     public List<Administrador> getlistAdministrador() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void updateAdministrador(String nome, String adm_siape, String senha) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Administrador recuperaAdministrador(int parseInt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

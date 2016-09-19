@@ -1,11 +1,5 @@
-<%-- 
-    Document   : Login
-    Created on : 06/09/2016, 11:56:02
-    Author     : Lucas
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
 <!DOCTYPE html>
 <html >
     <head>
@@ -25,6 +19,7 @@
                     <input name="adm_senha" type="password" placeholder="Senha"/>
                     
                     <button>Login</button>
+                    <a href="CadastroAdmin.jsp">Cadastro do Administrador</a>
                 </form>
             </div>
         </div>

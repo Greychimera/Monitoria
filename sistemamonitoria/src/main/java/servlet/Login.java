@@ -1,50 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.edu.iff.quissa.poo.sistemamonitoria.servlet;
+package servlet;
 
-import br.edu.iff.quissa.poo.sistemamonitoria.Administrador;
-import br.edu.iff.quissa.poo.sistemamonitoria.AdministradorDAO;
+import sistemamonitoria.Administrador;
+import sistemamonitoria.AdministradorDAO;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.hibernate.HibernateException;
+import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author Lislaine
- */
-public class CadastroAdministrador extends HttpServlet {
+public class Login extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        AdministradorDAO admDAO = new AdministradorDAO();
-        Administrador administrador = new Administrador();
-        
-        String nome = request.getParameter("nome");
-        String adm_siape = request.getParameter("adm_siape");
-        administrador.setAdm_siape(Integer.parseInt(adm_siape));
-        administrador.setAdm_senha(request.getParameter("adm_senha"));
-
-        boolean cadasfoi = false;
+        HttpSession session = request.getSession(true);
         try {
-            admDAO.addAdministrador(administrador);
-            cadasfoi = true; //tomara...
-        } catch (HibernateException ex) {
-            ex.printStackTrace();
-            cadasfoi = false;
-        }
 
-        if (cadasfoi) {
-            response.sendRedirect("cadastrado.jsp");
-        } else {
-            response.sendRedirect("erro.jsp");
+            Integer adm_siape = Integer.parseInt(request.getParameter("adm_siape"));
+            String adm_senha = (request.getParameter("adm_senha"));
+
+            AdministradorDAO admin = new AdministradorDAO();
+            Administrador user = admin.login(adm_siape, adm_senha);
+
+            if (user == null) {
+                session.invalidate();
+                response.sendRedirect("erro.jsp"); //error page
+            } else {
+                session.setAttribute("currentSessionUser", user);
+                response.sendRedirect("PaginaPrincipal.jsp"); //logged-in page             
+            }
+        } catch (Throwable theException) {
+            System.out.println(theException);
         }
     }
 

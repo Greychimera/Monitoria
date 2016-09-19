@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.iff.quissa.poo.sistemamonitoria.servlet;
+package servlet;
 
-import br.edu.iff.quissa.poo.sistemamonitoria.Administrador;
-import br.edu.iff.quissa.poo.sistemamonitoria.AdministradorDAO;
+import sistemamonitoria.Administrador;
+import sistemamonitoria.AdministradorDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -17,13 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author luizc
+ * @author aluno
  */
-/**
- *
- * @author luizc
- */
-public class AtualizaAdministrador extends HttpServlet {
+public class DeletaAdministrador extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,29 +32,47 @@ public class AtualizaAdministrador extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //esse servlet vai ser bem parecido com o do cadastro.
-        // vc pega todas as propriedades que vem do form
-        // só que aí vc joga essas informações no método de update do DAO.
-//
-    Administrador administrador = (Administrador) request.getSession(true).getAttribute("clienteAtual");
-        AdministradorDAO administradordao = new AdministradorDAO();
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        try {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet DemiteEmpregado</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
+            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
+            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
+            out.println("</body>");
+            out.println("</html>");
 
+            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
             String adm_siape = request.getParameter("adm_siape");
-            String senha  = request.getParameter("senha");
-            String nome  = request.getParameter("nome");
-            
-//     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
-//      TODOS OS PARAMETROS DA SUA ENTIDADE!
-    administradordao.updateAdministrador(nome, adm_siape, senha);
-
-
-            // aí, depois de atualizar, vc recarrega a list na sessão http:
-   List<Administrador> administradores = administradordao.listAdministrador();
-    request.getSession(true).setAttribute("administradores", administradores);
+            // eu coloquei o nome do código de "cod" lá na coluna do delete, no arquivo listaTotal.jsp
+   //         request.getParameter("cod");
+            /* daí vcs vão utilizar esse codigo
+            (no caso, A CHAVE PRIMÁRIA das vossas respectivas tabelas)
+            para chamar o objeto e deletá-lo.
+            O método no EmpregadoDAO parece funcionar blzinha...
+   */
+      AdministradorDAO administradordao = new AdministradorDAO();
+      //administradordao.setAdm_siape(adm_siape);
+      administradordao.deleteAdministrador(Integer.parseInt(adm_siape));
+       
+        List<Administrador> administradores = administradordao.listAdministrador();
+  request.getSession(true).setAttribute("administradores", administradores);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("listaTotal.jsp");
+          response.sendRedirect("listaTotal.jsp");
+           
+        } finally {
+            out.close();
+
+        }
     }
+
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

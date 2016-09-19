@@ -1,4 +1,4 @@
-package br.edu.iff.quissa.poo.sistemamonitoria;
+package sistemamonitoria;
 
 import java.io.Serializable;
 import javax.persistence.*;

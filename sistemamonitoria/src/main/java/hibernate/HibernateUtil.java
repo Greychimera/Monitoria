@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.iff.quissa.poo.sistemamonitoria.hibernate;
+package hibernate;
 
 /**
  *
  * @author Lislaine
  */
 
-import br.edu.iff.quissa.poo.sistemamonitoria.Administrador;
+import sistemamonitoria.Administrador;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;

@@ -1,6 +1,6 @@
 
-import br.edu.iff.quissa.poo.sistemamonitoria.Administrador;
-import br.edu.iff.quissa.poo.sistemamonitoria.hibernate.HibernateUtil;
+import sistemamonitoria.Administrador;
+import hibernate.HibernateUtil;
 import java.util.List;
 import org.hibernate.Session;
 

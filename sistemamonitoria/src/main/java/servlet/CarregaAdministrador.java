@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.iff.quissa.poo.sistemamonitoria.servlet;
+package servlet;
 
-import br.edu.iff.quissa.poo.sistemamonitoria.Administrador;
-import br.edu.iff.quissa.poo.sistemamonitoria.AdministradorDAO;
+import sistemamonitoria.Administrador;
+import sistemamonitoria.AdministradorDAO;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

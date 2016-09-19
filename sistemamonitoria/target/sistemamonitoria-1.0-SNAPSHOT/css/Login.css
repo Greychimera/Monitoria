@@ -1,6 +1,15 @@
+body, head, hr, html, i, iframe, img, ins, kbd, label, legend, li, menu, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub {
+    font-size: 100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-	background: white; 
+	background-image:url("fundoprincipal.jpg");
 	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;  
+        height: 100%;
+        width: 100%;
 }
 
 h3 {
@@ -50,6 +59,7 @@ h3 {
 	-webkit-transition: all 0.3 ease;
 	transition: all 0.3 ease;
 	cursor: pointer;
+        margin-bottom: 35px;
 }
 .form button:hover,.form button:active,.form button:focus {
 	background: #B40101;
@@ -98,4 +108,25 @@ h3 {
 }
 .container .info span .fa {
 	color: #EF3B3A;
+}
+
+a{
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        text-decoration:none;
+        color: #FFF;
+        
+}
+
+a:hover, a:focus, a:active{
+        color: #C90000;
+}
+
+a input{
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        text-decoration:none;
+        color: #FFF;
+}
+
+label{
+    padding-left:10rem;
 }

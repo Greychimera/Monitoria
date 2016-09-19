@@ -1,17 +1,29 @@
-package br.edu.iff.quissa.poo.sistemamonitoria.servlet;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package servlet;
 
+import sistemamonitoria.Administrador;
+import sistemamonitoria.AdministradorDAO;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-
-@WebServlet(name = "Logout", urlPatterns = {"/Logout"})
-
-public class Logout extends HttpServlet {
+/**
+ *
+ * @author luizc
+ */
+/**
+ *
+ * @author luizc
+ */
+public class AtualizaAdministrador extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -24,11 +36,28 @@ public class Logout extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //esse servlet vai ser bem parecido com o do cadastro.
+        // vc pega todas as propriedades que vem do form
+        // só que aí vc joga essas informações no método de update do DAO.
+//
+    Administrador administrador = (Administrador) request.getSession(true).getAttribute("clienteAtual");
+        AdministradorDAO administradordao = new AdministradorDAO();
 
-        HttpSession session = request.getSession(true);
-        session.invalidate();
-        response.sendRedirect("sistemamonitoria.jsp");
+            String adm_siape = request.getParameter("adm_siape");
+            String senha  = request.getParameter("senha");
+            String nome  = request.getParameter("nome");
+            
+//     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
+//      TODOS OS PARAMETROS DA SUA ENTIDADE!
+    administradordao.updateAdministrador(nome, adm_siape, senha);
 
+
+            // aí, depois de atualizar, vc recarrega a list na sessão http:
+   List<Administrador> administradores = administradordao.listAdministrador();
+    request.getSession(true).setAttribute("administradores", administradores);
+            // e volta para a página da listagem
+            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
+            response.sendRedirect("listaTotal.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -68,7 +97,6 @@ public class Logout extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    // </editor-fold>
- }
-}
+    }// </editor-fold>
 
+}

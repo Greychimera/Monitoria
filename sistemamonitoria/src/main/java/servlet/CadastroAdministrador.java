@@ -3,36 +3,51 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.iff.quissa.poo.sistemamonitoria.servlet;
+package servlet;
 
-import br.edu.iff.quissa.poo.sistemamonitoria.Administrador;
-import br.edu.iff.quissa.poo.sistemamonitoria.AdministradorDAO;
+import sistemamonitoria.Administrador;
+import sistemamonitoria.AdministradorDAO;
 import java.io.IOException;
-import java.util.List;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.hibernate.HibernateException;
 
 /**
  *
- * @author aluno
+ * @author Lislaine
  */
-public class ListaAdministrador extends HttpServlet {
+public class CadastroAdministrador extends HttpServlet {
 
-   
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
-        AdministradorDAO administradordao = new AdministradorDAO();
-  
-            List<Administrador> administradores = administradordao.getlistAdministrador();
-            request.setAttribute("administradores", administradores);
-            request.getSession(true).setAttribute("administradores", administradores);
-            response.sendRedirect("listaTotal.jsp");
+
+        AdministradorDAO admDAO = new AdministradorDAO();
+        Administrador administrador = new Administrador();
         
+        String nome = request.getParameter("nome");
+        String adm_siape = request.getParameter("adm_siape");
+        administrador.setAdm_siape(Integer.parseInt(adm_siape));
+        administrador.setAdm_senha(request.getParameter("adm_senha"));
+
+        boolean cadasfoi = false;
+        try {
+            admDAO.addAdministrador(administrador);
+            cadasfoi = true; //tomara...
+        } catch (HibernateException ex) {
+            ex.printStackTrace();
+            cadasfoi = false;
+        }
+
+        if (cadasfoi) {
+            response.sendRedirect("cadastrado.jsp");
+        } else {
+            response.sendRedirect("erro.jsp");
+        }
     }
-  
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

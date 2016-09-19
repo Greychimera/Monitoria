@@ -98,7 +98,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                          
                          <br>
                          
-                         <a href="Modificacoes.jsp">Listar</a>
+                         <a href="ModificacoesNosCadastros.jsp">Listar</a>
                          
                      </div>
                       
