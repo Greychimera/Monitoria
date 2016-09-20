@@ -1,4 +1,3 @@
-<%@page import="br.edu.iff.quissa.poo.sistemamonitoria.Administrador"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">

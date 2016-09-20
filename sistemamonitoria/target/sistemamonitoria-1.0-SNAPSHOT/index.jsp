@@ -1,4 +1,4 @@
-<%@page import="br.edu.iff.quissa.poo.sistemamonitoria.Administrador"%>
+<%@page import="sistemamonitoria.Administrador"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
