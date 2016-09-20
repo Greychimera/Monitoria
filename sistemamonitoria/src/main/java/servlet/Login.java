@@ -27,7 +27,7 @@ public class Login extends HttpServlet {
                 response.sendRedirect("erro.jsp"); //error page
             } else {
                 session.setAttribute("currentSessionUser", user);
-                response.sendRedirect("PaginaPrincipal.jsp"); //logged-in page             
+                response.sendRedirect("index.jsp"); //logged-in page             
             }
         } catch (Throwable theException) {
             System.out.println(theException);
