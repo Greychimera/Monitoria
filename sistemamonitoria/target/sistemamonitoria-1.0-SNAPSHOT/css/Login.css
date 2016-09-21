@@ -6,8 +6,8 @@ body, head, hr, html, i, iframe, img, ins, kbd, label, legend, li, menu, object,
 }
 
 body {
-	background-image:url("fundoprincipal.jpg");
-	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;  
+	background-image:url("../img/icons/Fundoprincipal.jpg");
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;  
         height: 100%;
         width: 100%;
 }
